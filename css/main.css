@@ -1,0 +1,325 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+@font-face {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 500;
+    src:
+         url("../fonts/league-spartan-v5-latin-500.woff2") format("woff2"), 
+         url("../fonts/league-spartan-v5-latin-500.woff") format("woff");
+  }
+  @font-face {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 700;
+    src: 
+         url("../fonts/league-spartan-v5-latin-700.woff2") format("woff2"), 
+         url("../fonts/league-spartan-v5-latin-700.woff") format("woff");
+  }
+
+  *
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+margin: 0;
+font-family: "League Spartan", "Arial", sans-serif;
+
+}
+
+
+
+:root {
+    --hero-bg-color: #EFFAFA;
+    --main-text-color: #5CA5A5;
+    --main-title-color: #2B3939;
+    --bottom-text-color: #7C8F8F;
+    --main-font-size: 13px
+}
+
+@font-face {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/league-spartan-v5-latin-regular.woff2") format("woff2"),url("../fonts/league-spartan-v5-latin-regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/league-spartan-v5-latin-700.woff2") format("woff2"),url("../fonts/league-spartan-v5-latin-700.woff") format("woff")
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    font-family: "League Spartan",sans-serif;
+    font-weight: 700
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h3 {
+    margin: 0
+}
+
+p {
+    margin: 0
+}
+
+.main-top-box {
+    width: 100%;
+    height: 156px;
+    background-image: url("../images/Combined\ Shape.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: calc(50%)
+}
+
+.hero {
+    padding-top: 76px;
+    padding-bottom: 120px;
+    background-color: var(--hero-bg-color)
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden
+}
+
+.hero-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 32px 40px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 15px 20px -5px #0d718226;
+    box-shadow: 0 15px 20px -5px #0d718226;
+    border-radius: 5px
+}
+
+.hero-item::before {
+    width: 88px;
+    height: 88px;
+    margin-right: 24px;
+    content: "";
+    background-image: url("../images/photoshop.svg");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.hero-item:nth-child(2)::before {
+    background-image: url("../images/manage.svg")
+}
+
+.hero-item:nth-child(3)::before {
+    background-image: url("../images/account.svg")
+}
+
+.hero-item:nth-child(4)::before {
+    background-image: url("../images/myhome.svg")
+}
+
+.hero-item:nth-child(5)::before {
+    background-image: url("../images/loop\ studios.svg")
+}
+
+.hero-item:nth-child(6)::before {
+    background-image: url("../images/insure.svg")
+}
+
+.hero-item:nth-child(7)::before {
+    background-image: url("../images/shortly.svg")
+}
+
+.hero-item:nth-child(8)::before {
+    background-image: url("../images/insure.svg")
+}
+
+.hero-item:nth-child(9)::before {
+    background-image: url("../images/eyecam.svg")
+}
+
+.hero-item:nth-child(10)::before {
+    background-image: url("../images/symbol.svg")
+}
+
+.hero-item:nth-child(1) {
+    padding-left: 35px;
+    border-left: 5px solid #5ca5a5
+}
+
+.hero-item:nth-child(2) {
+    padding-left: 35px;
+    border-left: 5px solid #5ca5a5
+}
+
+.hero-item:last-child {
+    margin-bottom: 0
+}
+
+.item-top-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.photo-strong {
+    margin-right: 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--main-text-color)
+}
+
+.hero-span {
+    margin-bottom: 8px;
+    padding: 6px 8px 4px 8px;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -.0846154px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--main-text-color);
+    border-radius: 12px
+}
+
+.new {
+    margin-right: 8px
+}
+
+.featured {
+    background-color: #2b3939
+}
+
+.hero-title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--main-title-color)
+}
+
+.hero-title:hover {
+    cursor: pointer;
+    color: var(--main-text-color)
+}
+
+.item-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 16px
+}
+
+.list-item:nth-child(3) {
+    margin-right: 0
+}
+
+.list-item:nth-child(2)::before {
+    width: 4px;
+    height: 4px;
+    margin-right: 16px;
+    content: "";
+    background-color: #B7C4C4;
+    border-radius: 50%;
+}
+
+.list-item:nth-child(3)::before {
+    width: 4px;
+    height: 4px;
+    margin-right: 16px;
+    content: "";
+    background-color: #B7C4C4;
+    border-radius: 50%;
+   
+}
+
+.item-desc {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -.115385px;
+    color: var(--bottom-text-color)
+}
+
+.item-end-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+
+ 
+}
+
+.item-end-item {
+    margin-right: 16px
+
+}
+
+.item-end-item:last-child {
+    margin-right: 0
+}
+
+.hero-btn {
+    padding: 7px 8px;
+    color: var(--main-text-color);
+    background-color: #5ca5a51a;
+    border: none;
+    border-radius: 4px
+}
+
+.hero-btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--main-text-color)
+}
+
+.account-new {
+    margin-right: 0
+}
